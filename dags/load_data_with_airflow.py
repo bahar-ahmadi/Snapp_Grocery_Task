@@ -7,13 +7,13 @@ from airflow.operators.python import PythonOperator
 
 
 d_args = {
-    'owner': 'vahid',
+    'owner': 'Bahar',
     'retry_delay': timedelta(minutes=5),
 }
 
 report_dag =  DAG(
     dag_id = 'Daily_Report',
-    tags = ['vahid'],
+    tags = ['Bahar'],
     default_args = d_args,
     schedule_interval = '@daily',
     start_date = days_ago(1),
